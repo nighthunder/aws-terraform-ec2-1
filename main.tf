@@ -18,7 +18,7 @@ resource "aws_security_group" "k8s-sg"{
     }
 
     ingress{
-        from_port = "22"
+        from_port = "22" # SSH enabled
         to_port = "22"
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
@@ -36,7 +36,7 @@ resource "aws_instance" "kubernetes-worker"{
     ami = "ami-007868005aea67c54"
     instance_type = "t3.medium"
     key_name= "k8s-key"
-    count = 2
+    count = 1
     tags = {
         name = "k8s"
         type = "worker"
@@ -48,7 +48,7 @@ resource "aws_instance" "kubernetes-master"{
     ami = "ami-007868005aea67c54"
     instance_type = "t3.medium"
     key_name= "k8s-key"
-    count = 2
+    count = 1
     tags = {
         name = "k8s"
         type = "master"

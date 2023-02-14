@@ -13,7 +13,7 @@ Terraform EC2 creation
     <li>Tags</li>
 </ul>
 
-<p>Docs:</p> <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance">https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance</a>
+<p>Docs:</p> <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance"target="_blank">https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance</a>
 
 
 
